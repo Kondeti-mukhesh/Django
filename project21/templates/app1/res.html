@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: lightred;
+            text-align: center;
+        }
+        table {
+            width: 10px;
+            background-color: lightblue;
+            box-shadow: 0 4px 8px blue;
+            margin: 0 auto;
+        }
+        th, td {
+            
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid yello;
+        }
+        th {
+            background-color: green;
+            color: white;
+            font-size: 18px;
+        }
+        td {
+            font-size: 16px;
+        }
+        h1 {
+            color: pink;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Displaying sales</h1>
+    <h3>
+        <table border="">
+            <tr>
+                <th>year</th>
+                <th>sales</th>
+            </tr>
+            {% for year,s in sales.items %}
+            <tr>
+                <td>{{year}}</td>
+                <td>{{s}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </h3>
+</body>
+</html>

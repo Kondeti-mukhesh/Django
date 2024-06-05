@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: aqua;
+        }
+        table{
+            border-collapse: collapse;
+            height:50px;
+            width: 70%;
+            background-color: green;
+        }
+        td {
+            font-size: 16px; 
+        }
+        th{
+            color:red
+        }
+            
+    </style>
+</head>
+<body>
+    <h1>student details</h1>
+    <table border="2">
+        <tr>
+            <th>name</th>
+            <th>rollno</th>
+            <th>course</th>
+        </tr>
+
+        <tr>
+            <td>{{student.name}}</td>
+            <td>{{student.rollno}}</td>
+            <td>{{student.course}}</td>
+        </tr>
+    </table>
+</body>
+</html>

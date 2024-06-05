@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: aqua;
+        }
+        h1{
+            color:green
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>diplaying Grade</h1>
+    <h3>
+        name: {{name}}<br>
+        {% if marks >= 90 %}
+        GRADE A
+
+        {% elif marks >= 70 and marks < 90 %}
+        GRADE B
+
+        {% elif marks >= 50 and marks < 70 %}
+        GRADE C
+
+        {% else %}
+        GRADE D
+
+        {% endif %}
+    </h3>
+</body>
+</html>
